@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudySync | Organize your studies. Own your goals.</title>
+  <meta name="description" content="StudySync brings assignments, deadlines, study goals and academic progress together in one simple, powerful student productivity workspace.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar-header" id="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="logo-brand" aria-label="StudySync Home">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        <span class="logo-text">Study<span>Sync</span></span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#product" class="nav-link">Product</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary btn-nav open-modal-btn">Get Started</button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+          <div class="eyebrow-badge">
+            <span class="badge-dot"></span>
+            <span>YOUR ACADEMIC LIFE, SIMPLIFIED</span>
+          </div>
+          <h1 class="hero-title">Organize your studies. <br><span class="gradient-text">Own your goals.</span></h1>
+          <p class="hero-description">
+            StudySync brings assignments, deadlines, study goals and academic progress together in one simple workspace.
+          </p>
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary btn-lg open-modal-btn">
+              Get Started Free
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </button>
+            <a href="#product" class="btn btn-secondary btn-lg">Explore Features</a>
+          </div>
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">45K+</span>
+              <span class="stat-label">Active Students</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Deadline Completion</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9/5</span>
+              <span class="stat-label">Student Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO RIGHT: CSS DASHBOARD MOCKUP -->
+        <div class="hero-dashboard-wrapper reveal">
+          <div class="dashboard-window">
+            <div class="dashboard-header">
+              <div class="window-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+              </div>
+              <div class="window-title">StudySync Dashboard</div>
+              <div class="window-badge">Live Preview</div>
+            </div>
+
+            <div class="dashboard-body">
+              <!-- Top Greeting Bar -->
+              <div class="dash-greeting-bar">
+                <div class="dash-user">
+                  <div class="avatar">Alex</div>
+                  <div>
+                    <h3 class="greeting-text">Good morning, Alex 👋</h3>
+                    <p class="greeting-sub">Fall Semester 2026 • Computer Science</p>
+                  </div>
+                </div>
+                <div class="dash-streak-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 23c6.075 0 11-4.925 11-11 0-4.05-2.19-7.59-5.46-9.51a.75.75 0 0 0-1.07.82 8.51 8.51 0 0 1-1.08 6.44c-.75 1.15-1.92 1.95-3.23 2.19-.89.16-1.74-.08-2.45-.63-.71-.55-1.12-1.38-1.14-2.27 0-.58.15-1.15.44-1.65.28-.48.69-.87 1.17-1.14a.75.75 0 0 0-.07-1.34A10.97 10.97 0 0 0 1 12c0 6.075 4.925 11 11 11z"/></svg>
+                  <span>14 Day Streak!</span>
+                </div>
+              </div>
+
+              <!-- Top Metrics Cards -->
+              <div class="dash-metrics-grid">
+                <div class="dash-metric-card">
+                  <div class="metric-header">
+                    <span>Today's Progress</span>
+                    <span class="metric-value" id="dashProgressPct">75%</span>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-bar" id="dashProgressBar" style="width: 75%;"></div>
+                  </div>
+                  <div class="metric-footer" id="dashProgressText">3 of 4 tasks completed</div>
+                </div>
+
+                <div class="dash-metric-card">
+                  <div class="metric-header">
+                    <span>Study Hours</span>
+                    <span class="metric-value positive">+4.2 hrs</span>
+                  </div>
+                  <div class="mini-sparkline">
+                    <div class="spark-bar" style="height: 40%;"></div>
+                    <div class="spark-bar" style="height: 60%;"></div>
+                    <div class="spark-bar" style="height: 35%;"></div>
+                    <div class="spark-bar" style="height: 85%;"></div>
+                    <div class="spark-bar active" style="height: 100%;"></div>
+                  </div>
+                  <div class="metric-footer">Target: 5.0 hrs/day</div>
+                </div>
+              </div>
+
+              <!-- Content Grid inside Dashboard -->
+              <div class="dash-content-grid">
+                <!-- Upcoming Deadlines -->
+                <div class="dash-panel">
+                  <div class="panel-head">
+                    <h4>Upcoming Deadlines</h4>
+                    <span class="badge-urgent">2 Due Soon</span>
+                  </div>
+                  <ul class="deadline-list">
+                    <li class="deadline-item urgent">
+                      <div class="deadline-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"></path><circle cx="12" cy="12" r="9"></circle></svg>
+                      </div>
+                      <div class="deadline-info">
+                        <span class="deadline-title">CS101 Algorithm Analysis</span>
+                        <span class="deadline-tag">Today, 11:59 PM</span>
+                      </div>
+                      <span class="status-chip chip-red">Urgent</span>
+                    </li>
+                    <li class="deadline-item warning">
+                      <div class="deadline-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"></path><circle cx="12" cy="12" r="9"></circle></svg>
+                      </div>
+                      <div class="deadline-info">
+                        <span class="deadline-title">MATH202 Linear Algebra Quiz</span>
+                        <span class="deadline-tag">Tomorrow, 2:00 PM</span>
+                      </div>
+                      <span class="status-chip chip-yellow">Soon</span>
+                    </li>
+                    <li class="deadline-item normal">
+                      <div class="deadline-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"></path><circle cx="12" cy="12" r="9"></circle></svg>
+                      </div>
+                      <div class="deadline-info">
+                        <span class="deadline-title">ENG105 Research Outline</span>
+                        <span class="deadline-tag">Friday, Oct 24</span>
+                      </div>
+                      <span class="status-chip chip-blue">Upcoming</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Interactive Checklist & Goals -->
+                <div class="dash-panel">
+                  <div class="panel-head">
+                    <h4>Today's Action Items</h4>
+                    <span class="panel-sub-text">Interactive</span>
+                  </div>
+                  <div class="checklist" id="heroChecklist">
+                    <label class="check-item completed">
+                      <input type="checkbox" checked class="task-checkbox">
+                      <span class="custom-check">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      </span>
+                      <span class="task-text">Review Data Structures Chapter 4</span>
+                    </label>
+                    <label class="check-item completed">
+                      <input type="checkbox" checked class="task-checkbox">
+                      <span class="custom-check">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      </span>
+                      <span class="task-text">Submit Physics Lab Problem Set</span>
+                    </label>
+                    <label class="check-item completed">
+                      <input type="checkbox" checked class="task-checkbox">
+                      <span class="custom-check">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      </span>
+                      <span class="task-text">Practice 30 mins Flashcards</span>
+                    </label>
+                    <label class="check-item">
+                      <input type="checkbox" class="task-checkbox">
+                      <span class="custom-check">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      </span>
+                      <span class="task-text">Final proofread for CS101 Essay</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header center reveal">
+          <div class="eyebrow-text">WHY STUDYSYNC</div>
+          <h2 class="section-title">Everything you need to stay on track.</h2>
+          <p class="section-subtitle">
+            College students routinely juggle assignments, exam schedules, project deadlines, and personal milestones across 4 or 5 different apps. StudySync consolidates your academic life into one seamless, distraction-free environment.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon icon-purple">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Stay Organized</h3>
+            <p class="card-description">
+              Keep courses, syllabus notes, assignments, and reading materials neatly structured by subject in a clean central dashboard.
+            </p>
+          </div>
+
+          <div class="benefit-card reveal" style="animation-delay: 0.1s;">
+            <div class="benefit-icon icon-indigo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">Never Miss a Deadline</h3>
+            <p class="card-description">
+              Intelligent notifications and priority deadline trackers ensure submission dates never catch you unprepared again.
+            </p>
+          </div>
+
+          <div class="benefit-card reveal" style="animation-delay: 0.2s;">
+            <div class="benefit-icon icon-blue">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">Track Your Progress</h3>
+            <p class="card-description">
+              Visualize your daily study habits, track GPA targets, monitor course completion rates, and celebrate academic milestones.
+            </p>
+          </div>
+
+          <div class="benefit-card reveal" style="animation-delay: 0.3s;">
+            <div class="benefit-icon icon-emerald">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Study Smarter</h3>
+            <p class="card-description">
+              Leverage built-in Pomodoro timers, spaced repetition schedules, and automated study planners tailored to your learning style.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section class="product-section" id="product">
+      <div class="container">
+        <div class="section-header center reveal">
+          <div class="eyebrow-text">POWERFUL FEATURES</div>
+          <h2 class="section-title">Built specifically for student success.</h2>
+          <p class="section-subtitle">
+            Every feature in StudySync is designed to minimize cognitive load, eliminate last-minute cramming, and keep your focus on learning.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card reveal">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Smart Task Management</h3>
+              <p class="feature-tagline">"Keep assignments and academic tasks organized."</p>
+              <p class="feature-desc">
+                Categorize tasks by course, difficulty, and priority. Group sub-tasks, tag homework vs exams, and filter items with a single click.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card reveal" style="animation-delay: 0.1s;">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+                <circle cx="12" cy="15" r="2"></circle>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Deadline Planner</h3>
+              <p class="feature-tagline">"See upcoming deadlines before they become stressful."</p>
+              <p class="feature-desc">
+                A dynamic calendar and timeline view maps out upcoming exams, paper due dates, and major project milestones weeks in advance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card reveal" style="animation-delay: 0.2s;">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Study Goals</h3>
+              <p class="feature-tagline">"Set goals and track your progress."</p>
+              <p class="feature-desc">
+                Break down large academic ambitions (like achieving a target GPA or completing 50 practice tests) into actionable weekly targets.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card reveal" style="animation-delay: 0.3s;">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"></path>
+                <path d="M12 6v6l4 2"></path>
+                <path d="M16 2.5l2 2"></path>
+                <path d="M8 2.5L6 4.5"></path>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>AI Study Assistant</h3>
+              <p class="feature-tagline">"Get personalized help with planning and studying."</p>
+              <p class="feature-desc">
+                Receive intelligent study schedule recommendations based on your workload, estimated task difficulty, and upcoming exams.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECONDARY SHOWCASE: INTERACTIVE WORKSPACE PREVIEW TAB SWITCHER -->
+        <div class="interactive-showcase reveal">
+          <div class="showcase-header">
+            <h3>Explore the StudySync Workspace</h3>
+            <p>Click through the views below to see how StudySync adapts to your workflow.</p>
+            
+            <div class="showcase-tabs" role="tablist">
+              <button class="showcase-tab active" data-tab="tab-tasks" role="tab" aria-selected="true">Task Planner</button>
+              <button class="showcase-tab" data-tab="tab-calendar" role="tab" aria-selected="false">Deadline Calendar</button>
+              <button class="showcase-tab" data-tab="tab-analytics" role="tab" aria-selected="false">Goal Analytics</button>
+              <button class="showcase-tab" data-tab="tab-ai" role="tab" aria-selected="false">AI Assistant</button>
+            </div>
+          </div>
+
+          <div class="showcase-display">
+            <!-- Tab 1: Task Planner -->
+            <div class="tab-panel active" id="tab-tasks" role="tabpanel" aria-labelledby="tab-btn-tasks">
+              <div class="tab-card-preview">
+                <div class="tab-visual-header">
+                  <div>
+                    <span class="tab-title">Task Planner & Workspace</span>
+                    <p class="tab-subtitle-sm">Today's Tasks • Fall Semester</p>
+                  </div>
+                  <span class="tab-badge" id="productTaskBadge">3 of 5 Completed (60%)</span>
+                </div>
+                <div class="tab-progress-summary">
+                  <div class="tab-progress-label">
+                    <span>Task Completion</span>
+                    <span id="productTaskPctText">60%</span>
+                  </div>
+                  <div class="bar-bg"><div class="bar-fill" id="productTaskProgressBar" style="width: 60%;"></div></div>
+                </div>
+                <div class="tab-list-mock" id="productTaskList">
+                  <label class="mock-item clickable-task completed">
+                    <input type="checkbox" checked class="product-task-checkbox" data-category="HW 3">
+                    <span class="mock-check checked">✓</span>
+                    <span class="mock-text strike">Binary Search Tree Implementation</span>
+                    <span class="mock-tag task-status-tag">HW 3 • Completed</span>
+                  </label>
+                  <label class="mock-item clickable-task completed">
+                    <input type="checkbox" checked class="product-task-checkbox" data-category="Lab">
+                    <span class="mock-check checked">✓</span>
+                    <span class="mock-text strike">Physics Lab Experiment Notes</span>
+                    <span class="mock-tag task-status-tag">Lab • Completed</span>
+                  </label>
+                  <label class="mock-item clickable-task completed">
+                    <input type="checkbox" checked class="product-task-checkbox" data-category="Math">
+                    <span class="mock-check checked">✓</span>
+                    <span class="mock-text strike">Linear Algebra Quiz Revision</span>
+                    <span class="mock-tag task-status-tag">Math • Completed</span>
+                  </label>
+                  <label class="mock-item clickable-task">
+                    <input type="checkbox" class="product-task-checkbox" data-category="High Priority" data-tag-class="tag-purple">
+                    <span class="mock-check"></span>
+                    <span class="mock-text">Draft CS101 Algorithm Analysis Essay</span>
+                    <span class="mock-tag tag-purple task-status-tag">High Priority • Pending</span>
+                  </label>
+                  <label class="mock-item clickable-task">
+                    <input type="checkbox" class="product-task-checkbox" data-category="Quiz Prep" data-tag-class="tag-blue">
+                    <span class="mock-check"></span>
+                    <span class="mock-text">Practice 15 Chemistry Flashcards</span>
+                    <span class="mock-tag tag-blue task-status-tag">Quiz Prep • Pending</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Deadline Calendar -->
+            <div class="tab-panel" id="tab-calendar" role="tabpanel" aria-labelledby="tab-btn-calendar">
+              <div class="tab-card-preview">
+                <div class="tab-visual-header">
+                  <div>
+                    <span class="tab-title">Academic Deadline Calendar & Timeline</span>
+                    <p class="tab-subtitle-sm">Upcoming Exams, Assignments & Milestones</p>
+                  </div>
+                  <span class="tab-badge">4 Active Deadlines</span>
+                </div>
+                <div class="tab-deadline-grid">
+                  <div class="deadline-row-item urgent">
+                    <div class="row-date">
+                      <span class="d-day">TODAY</span>
+                      <span class="d-time">11:59 PM</span>
+                    </div>
+                    <div class="row-info">
+                      <strong>CS101 Algorithm Analysis Essay</strong>
+                      <span>Computer Science • 100 Points</span>
+                    </div>
+                    <span class="status-chip chip-red">Urgent Assignment</span>
+                  </div>
+
+                  <div class="deadline-row-item exam">
+                    <div class="row-date">
+                      <span class="d-day">TOMORROW</span>
+                      <span class="d-time">2:00 PM</span>
+                    </div>
+                    <div class="row-info">
+                      <strong>MATH202 Linear Algebra Midterm</strong>
+                      <span>Mathematics • Hall 3B</span>
+                    </div>
+                    <span class="status-chip chip-yellow">Exam Date</span>
+                  </div>
+
+                  <div class="deadline-row-item project">
+                    <div class="row-date">
+                      <span class="d-day">FRI, OCT 23</span>
+                      <span class="d-time">5:00 PM</span>
+                    </div>
+                    <div class="row-info">
+                      <strong>PHYS105 Group Lab Milestone</strong>
+                      <span>Physics • Lab Team A</span>
+                    </div>
+                    <span class="status-chip chip-purple">Project Deadline</span>
+                  </div>
+
+                  <div class="deadline-row-item upcoming">
+                    <div class="row-date">
+                      <span class="d-day">MON, OCT 26</span>
+                      <span class="d-time">11:59 PM</span>
+                    </div>
+                    <div class="row-info">
+                      <strong>ENG105 Research Paper Outline</strong>
+                      <span>English Literature • Draft 1</span>
+                    </div>
+                    <span class="status-chip chip-blue">Upcoming Assignment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Goal Analytics -->
+            <div class="tab-panel" id="tab-analytics" role="tabpanel" aria-labelledby="tab-btn-analytics">
+              <div class="tab-card-preview">
+                <div class="tab-visual-header">
+                  <div>
+                    <span class="tab-title">Student Progress & Goal Analytics</span>
+                    <p class="tab-subtitle-sm">Real-time Performance & GPA Tracker</p>
+                  </div>
+                  <span class="tab-badge">GPA Target: 3.85</span>
+                </div>
+                <div class="tab-analytics-mock">
+                  <div class="analytics-row">
+                    <div class="analytic-item">
+                      <span class="lbl">Semester Goal Progress</span>
+                      <div class="val">3 of 4 Goals Achieved (75%)</div>
+                      <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div>
+                    </div>
+                    <div class="analytic-item">
+                      <span class="lbl">Weekly Study Hours</span>
+                      <div class="val">24.5 / 30 hrs (82%)</div>
+                      <div class="bar-bg"><div class="bar-fill purple" style="width: 82%;"></div></div>
+                    </div>
+                  </div>
+                  <div class="course-breakdown">
+                    <h5 class="breakdown-title">Course Mastery Progress</h5>
+                    <div class="course-bars">
+                      <div class="course-bar-item">
+                        <div class="c-info"><span>CS101 Data Structures</span> <strong>90%</strong></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+                      </div>
+                      <div class="course-bar-item">
+                        <div class="c-info"><span>MATH202 Linear Algebra</span> <strong>85%</strong></div>
+                        <div class="bar-bg"><div class="bar-fill purple" style="width: 85%;"></div></div>
+                      </div>
+                      <div class="course-bar-item">
+                        <div class="c-info"><span>PHYS105 Mechanics Lab</span> <strong>78%</strong></div>
+                        <div class="bar-bg"><div class="bar-fill blue" style="width: 78%;"></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4: AI Assistant -->
+            <div class="tab-panel" id="tab-ai" role="tabpanel" aria-labelledby="tab-btn-ai">
+              <div class="tab-card-preview">
+                <div class="tab-visual-header">
+                  <div>
+                    <span class="tab-title">StudySync AI Schedule Advisor</span>
+                    <p class="tab-subtitle-sm">Personalized Academic Assistant</p>
+                  </div>
+                  <span class="tab-badge badge-ai">⚡ AI Active</span>
+                </div>
+                <div class="tab-ai-mock">
+                  <div class="ai-msg bot">
+                    <div class="ai-avatar">🤖</div>
+                    <div class="ai-bubble" id="aiResponseBubble">
+                      "I noticed your CS101 project is due tonight and Math Quiz is tomorrow. I've rescheduled tonight's 2-hour revision block to prioritize CS101 first."
+                    </div>
+                  </div>
+                  <div class="ai-msg user">
+                    <div class="ai-bubble user-b" id="aiUserBubble">
+                      "What should I focus on next?"
+                    </div>
+                  </div>
+                  <div class="ai-prompts-wrapper">
+                    <span class="prompts-title">Click a suggested prompt:</span>
+                    <div class="ai-prompts-flex">
+                      <button type="button" class="ai-prompt-btn active" data-prompt="plan">"Create a study plan"</button>
+                      <button type="button" class="ai-prompt-btn" data-prompt="deadlines">"Organize my deadlines"</button>
+                      <button type="button" class="ai-prompt-btn" data-prompt="schedule">"Improve my schedule"</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header center reveal">
+          <div class="eyebrow-text">TESTIMONIALS</div>
+          <h2 class="section-title">Trusted by students worldwide.</h2>
+          <p class="section-subtitle">
+            See how StudySync is helping college students streamline their routines and reduce academic stress.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <p class="testimonial-text">
+              "StudySync completely transformed how I handle my semester. Having my assignments, study streak, and exam countdowns in one single dashboard saved me from missing a single deadline!"
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-1">SR</div>
+              <div>
+                <h4 class="author-name">Sophia Rivera</h4>
+                <p class="author-role">Computer Science • Junior Year</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal" style="animation-delay: 0.1s;">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <p class="testimonial-text">
+              "As a pre-med student with a packed schedule, keeping track of lab reports and exams was overwhelming. The AI Study Assistant helped me structure realistic daily study goals without burnout."
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-2">MC</div>
+              <div>
+                <h4 class="author-name">Marcus Chen</h4>
+                <p class="author-role">Biochemistry • Senior Year</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal" style="animation-delay: 0.2s;">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <p class="testimonial-text">
+              "The design is incredibly clean and intuitive. I used to use 4 different apps for tasks, calendar, and study timing. StudySync combines everything into one beautiful workspace."
+            </p>
+            <div class="author-info">
+              <div class="author-avatar avatar-3">EP</div>
+              <div>
+                <h4 class="author-name">Emily Patel</h4>
+                <p class="author-role">Business Analytics • Sophomore Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper reveal">
+          <div class="contact-info-col">
+            <div class="eyebrow-text">GET IN TOUCH</div>
+            <h2 class="section-title">Have questions? We're here to help.</h2>
+            <p class="contact-desc">
+              Whether you have feedback, need support, or want to bring StudySync to your university campus, drop us a message!
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="detail-label">Email Us</span>
+                  <span class="detail-val">hello@studysync.app</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="detail-label">Campus HQ</span>
+                  <span class="detail-val">Built for students, everywhere</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <span class="detail-label">Response Time</span>
+                  <span class="detail-val">Within 24 hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required>
+                <span class="error-msg" id="nameError">Please enter your full name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="alex@university.edu" required>
+                <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="How can we help you?" required>
+                <span class="error-msg" id="subjectError">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your query..." required></textarea>
+                <span class="error-msg" id="messageError">Please enter your message.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <div id="formSuccess" class="form-success-banner" role="alert">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Thank you! Your message has been sent successfully. We will get back to you shortly.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Footer Brand -->
+        <div class="footer-brand-col">
+          <a href="#home" class="logo-brand">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <span class="logo-text">Study<span>Sync</span></span>
+          </a>
+          <p class="footer-desc">
+            Organize your studies. Own your goals. The ultimate all-in-one student productivity workspace.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links Col 1 -->
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About StudySync</a></li>
+            <li><a href="#product">Product Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Col 2 -->
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="#product">Task Planner</a></li>
+            <li><a href="#product">Deadline Tracker</a></li>
+            <li><a href="#product">Goal Analytics</a></li>
+            <li><a href="#product">AI Study Assistant</a></li>
+          </ul>
+        </div>
+
+        <!-- Links Col 3 -->
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Legal & TechnoJam</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">TJ-TASKS-2026</a></li>
+            <li><a href="#">Web Dev Challenge</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 StudySync. Built as a student web development project. Built for TechnoJam TJ-TASKS-2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ONBOARDING MODAL -->
+  <div class="modal-overlay" id="onboardingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Welcome to StudySync 👋</h3>
+        <p class="modal-subtitle">Let's organize your semester.</p>
+      </div>
+      <div class="modal-body">
+        <p class="modal-question">What would you like to manage?</p>
+        <div class="modal-options-grid">
+          <label class="modal-option-card active">
+            <input type="checkbox" checked value="Assignments" class="modal-option-checkbox">
+            <div class="option-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
+            </div>
+            <span class="option-label">Assignments</span>
+            <span class="option-check-badge">✓</span>
+          </label>
+
+          <label class="modal-option-card active">
+            <input type="checkbox" checked value="Deadlines" class="modal-option-checkbox">
+            <div class="option-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <span class="option-label">Deadlines</span>
+            <span class="option-check-badge">✓</span>
+          </label>
+
+          <label class="modal-option-card active">
+            <input type="checkbox" checked value="Study Goals" class="modal-option-checkbox">
+            <div class="option-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <span class="option-label">Study Goals</span>
+            <span class="option-check-badge">✓</span>
+          </label>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-block btn-lg modal-submit-btn" id="startOrganizingBtn">
+          <span>Start Organizing →</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
