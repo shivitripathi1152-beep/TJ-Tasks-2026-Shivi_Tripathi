@@ -43,7 +43,7 @@ Interactive features include:
 
 ## Live Demo
 
-https://shivitripathi1152-beep.github.io/TJ-Tasks-2026-ShiviTripathi/
+https://shivitripathi1152-beep.github.io/TJ-Tasks-2026-Shivi_Tripathi/
 
 ## Screenshots
 
